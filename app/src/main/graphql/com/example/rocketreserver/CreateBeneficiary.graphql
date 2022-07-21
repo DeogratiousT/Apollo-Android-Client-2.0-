@@ -1,0 +1,23 @@
+mutation CreateBeneficiary($file : Upload!){
+  createBeneficiary(input: {
+  	first_name : "Teddius",
+    middle_name : "MYles",
+    last_name : "Super",
+    age : 35,
+    mobile_number : "4567645323",
+    national_id : "654676456456",
+    token_number : "GF566GHHJ97H",
+    project_id : 24,
+    amount : 1232.21,
+    payment_status : "paid",
+    featured_image : $file
+  })
+  {
+    message
+    beneficiary{
+      id
+      first_name
+      featured_image
+    }
+  }
+}

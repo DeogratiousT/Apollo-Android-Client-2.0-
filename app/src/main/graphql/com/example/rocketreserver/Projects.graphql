@@ -1,0 +1,6 @@
+query Projects {
+  projects(status : "active"){
+    id
+    name
+  }
+}

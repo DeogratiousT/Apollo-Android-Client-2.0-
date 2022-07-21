@@ -1,0 +1,8 @@
+query Beneficiaries {
+  beneficiaries(project_id: 24){
+    id
+    first_name
+    age
+    amount
+  }
+}
